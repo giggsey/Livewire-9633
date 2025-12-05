@@ -1,7 +1,7 @@
 <div>
     <p id="proof-js-is-running"></p>
     <p>The text below should be Red or Blue, but instead we get a JS error</p>
-    <div class="inner-friday">
+    <div id="inner-friday">
         @if (now()->dayName === 'Friday')
             Inner Friday
         @else
@@ -11,7 +11,6 @@
 
     <script type="text/javascript">
         document.getElementById('proof-js-is-running').innerHTML = 'JS has executed';
-
         @if (now()->dayName === 'Friday')
         document.getElementById('inner-friday').style.color = 'red';
         @else
