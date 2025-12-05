@@ -1,6 +1,6 @@
 <div>
     <p id="proof-js-is-running"></p>
-    <p>The text below should be Red or Blue, but instead we get a JS error</p>
+    <p>The text below should be Red or Blue based on the JS</p>
     <div id="inner-friday">
         @if (now()->dayName === 'Friday')
             Inner Friday
